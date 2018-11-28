@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <script>
+      function buttonGotClicked() {
+        var newElement = document.createElement("div");
+        var newElementContent = document.createTextNode("Hi there!");
+        newElement.appendChild(newElementContent);
+        document.body.appendChild(newElement);  
+      }
         <link rel="stylesheet" type="text/css" href="styles/exercise1.css">
         <title>CSS Exercises 1</title>
     </head>
@@ -16,7 +23,7 @@
         <h2>Make me green on an orange background</h2>
 <h3>hi</h3>
         <p>I am a paragraph I should be blue, Helvetica, size 16px.</p>
-
+        <button id="mybutton" onclick="buttonGotClicked()">Click me!</button>
         <ol>
             <li>This is an ordered list.</li>
             <li>All items in this list should have a teal background.</li>
